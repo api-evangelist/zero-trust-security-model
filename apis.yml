@@ -1,16 +1,22 @@
+aid: zero-trust-security-model
 name: Zero-Trust Security Model
 description: A security framework that eliminates implicit trust and requires continuous
   verification of all users, devices, and applications attempting to access resources,
   regardless of their location inside or outside the network perimeter. It is widely
   adopted across industries to safeguard digital assets and reduce security risks.
+type: Index
 url: https://www.nist.gov/publications/zero-trust-architecture
 tags:
-- Security
-- Network Security
-- Access Control
-- Identity Management
-- Cybersecurity
+  - Security
+  - Network Security
+  - Access Control
+  - Identity Management
+  - Cybersecurity
 created: '2025'
-modified: '2025'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis: []
 common: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
