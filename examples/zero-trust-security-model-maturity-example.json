@@ -1,0 +1,100 @@
+{
+  "organization": "Example Federal Civilian Agency",
+  "framework": "CISA-ZTMM-v2",
+  "assessed_at": "2026-04-30",
+  "assessor": "Zero Trust Program Office",
+  "overall_level": "initial",
+  "pillars": [
+    {
+      "pillar": "Identity",
+      "level": "advanced",
+      "evidence": [
+        "Single SAML/OIDC IdP enforced for all interactive logins",
+        "Phishing-resistant MFA (FIDO2) deployed to 95% of workforce",
+        "Risk-based conditional access policies in production"
+      ],
+      "gaps": [
+        "Service account inventory incomplete",
+        "Workload identity (SPIFFE) not yet adopted"
+      ]
+    },
+    {
+      "pillar": "Devices",
+      "level": "initial",
+      "evidence": [
+        "EDR deployed on managed endpoints",
+        "MDM enrollment required for mobile"
+      ],
+      "gaps": [
+        "Continuous device-posture signals not fed into policy decisions",
+        "Unmanaged BYOD has flat network access"
+      ]
+    },
+    {
+      "pillar": "Networks",
+      "level": "initial",
+      "evidence": [
+        "Inline TLS inspection at primary egress",
+        "Initial microsegmentation in production VPC"
+      ],
+      "gaps": [
+        "Legacy site-to-site VPN still in use for contractors",
+        "East-west traffic mostly unsegmented"
+      ]
+    },
+    {
+      "pillar": "Applications and Workloads",
+      "level": "initial",
+      "evidence": [
+        "Public web apps fronted by ZTNA broker"
+      ],
+      "gaps": [
+        "Internal microservices rely on network position rather than identity",
+        "No SBOM management"
+      ]
+    },
+    {
+      "pillar": "Data",
+      "level": "traditional",
+      "evidence": [
+        "DLP on email gateways"
+      ],
+      "gaps": [
+        "Data classification not enforced",
+        "No data-centric encryption with key brokering"
+      ]
+    },
+    {
+      "pillar": "Visibility and Analytics",
+      "level": "initial",
+      "evidence": [
+        "Centralized SIEM with EDR, IdP, and gateway logs"
+      ],
+      "gaps": [
+        "UEBA not in place",
+        "Alert fatigue - low automation"
+      ]
+    },
+    {
+      "pillar": "Automation and Orchestration",
+      "level": "traditional",
+      "evidence": [
+        "Provisioning via SCIM"
+      ],
+      "gaps": [
+        "No SOAR playbooks for ZT signal-driven response"
+      ]
+    },
+    {
+      "pillar": "Governance",
+      "level": "initial",
+      "evidence": [
+        "Annual access recertification"
+      ],
+      "gaps": [
+        "Zero Trust roadmap not yet board-approved",
+        "Funding fragmented across IT and security"
+      ]
+    }
+  ]
+}

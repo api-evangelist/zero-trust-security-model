@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/draft-00/schema",
+  "name": "ZeroTrustPillarStructure",
+  "type": "object",
+  "description": "Structural reference for a Zero Trust pillar from any framework.",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "framework": { "type": "string" },
+    "description": { "type": "string" },
+    "capabilities": { "type": "array", "description": "Discrete capabilities the pillar requires" }
+  }
+}

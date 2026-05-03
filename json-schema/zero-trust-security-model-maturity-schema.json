@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/zero-trust-security-model/main/json-schema/zero-trust-security-model-maturity-schema.json",
+  "title": "Zero Trust Maturity Assessment",
+  "description": "A maturity assessment of an organization's Zero Trust posture across the CISA ZTMM v2 pillars.",
+  "type": "object",
+  "required": ["organization", "assessed_at", "pillars"],
+  "properties": {
+    "organization": { "type": "string" },
+    "framework": { "type": "string", "default": "CISA-ZTMM-v2" },
+    "assessed_at": { "type": "string", "format": "date" },
+    "assessor": { "type": "string" },
+    "overall_level": { "type": "string", "enum": ["traditional", "initial", "advanced", "optimal"] },
+    "pillars": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pillar", "level"],
+        "properties": {
+          "pillar": {
+            "type": "string",
+            "enum": [
+              "Identity",
+              "Devices",
+              "Networks",
+              "Applications and Workloads",
+              "Data",
+              "Visibility and Analytics",
+              "Automation and Orchestration",
+              "Governance"
+            ]
+          },
+          "level": { "type": "string", "enum": ["traditional", "initial", "advanced", "optimal"] },
+          "evidence": { "type": "array", "items": { "type": "string" } },
+          "gaps": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

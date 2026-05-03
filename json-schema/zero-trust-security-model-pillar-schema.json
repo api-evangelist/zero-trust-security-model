@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/zero-trust-security-model/main/json-schema/zero-trust-security-model-pillar-schema.json",
+  "title": "Zero Trust Pillar",
+  "description": "A pillar of the Zero Trust security model as defined by NIST, CISA, DoD, or NSA reference frameworks.",
+  "type": "object",
+  "required": ["id", "name", "framework"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "framework": {
+      "type": "string",
+      "enum": ["NIST-SP-800-207", "CISA-ZTMM", "DoD-ZTRA", "NSA-CSI", "NCSC"]
+    },
+    "description": { "type": "string" },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "maturity_level": { "type": "string", "enum": ["traditional", "initial", "advanced", "optimal", "target", "advanced-target"] },
+          "description": { "type": "string" }
+        },
+        "required": ["id", "name"]
+      }
+    }
+  }
+}

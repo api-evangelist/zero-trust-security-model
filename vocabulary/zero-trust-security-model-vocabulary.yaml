@@ -1,0 +1,74 @@
+name: Zero Trust Security Model Vocabulary
+description: >-
+  Domain vocabulary for the Zero Trust security model, harmonizing the terms
+  used across NIST SP 800-207, the CISA Zero Trust Maturity Model, the DoD
+  Zero Trust Reference Architecture, NSA Cybersecurity Information Sheets,
+  and the UK NCSC design principles.
+modified: '2026-05-03'
+terms:
+  - term: ZeroTrust
+    definition: A security model that eliminates implicit trust based on network location and requires continuous verification of users, devices, and workloads.
+    related: [NeverTrustAlwaysVerify, AssumeBreach]
+  - term: NeverTrustAlwaysVerify
+    definition: The Zero Trust mantra; no entity is trusted by default and every request is verified.
+    related: [ZeroTrust]
+  - term: AssumeBreach
+    definition: A design assumption that adversaries are already present in the environment, motivating microsegmentation and continuous monitoring.
+    related: [ZeroTrust, Microsegmentation]
+  - term: LeastPrivilege
+    definition: Granting the minimum permissions required to perform a task, on a per-session basis.
+    related: [JustInTime]
+  - term: JustInTime
+    definition: Issuing temporary, scoped privileges that expire automatically.
+    related: [LeastPrivilege]
+  - term: Pillar
+    definition: A category of Zero Trust capabilities (Identity, Devices, Networks, Applications and Workloads, Data, Visibility and Analytics, Automation and Orchestration, Governance).
+    related: [Capability]
+  - term: Capability
+    definition: A discrete control or function within a Zero Trust pillar.
+    related: [Pillar, MaturityLevel]
+  - term: MaturityLevel
+    definition: One of the four CISA ZTMM v2 levels - Traditional, Initial, Advanced, Optimal.
+    related: [Pillar]
+  - term: PolicyDecisionPoint
+    definition: The component (PDP) that evaluates an access request against policy and returns a decision.
+    related: [PolicyEnforcementPoint, PolicyAdministrationPoint]
+  - term: PolicyEnforcementPoint
+    definition: The component (PEP) that enforces the PDP's decision in the data path.
+    related: [PolicyDecisionPoint]
+  - term: PolicyAdministrationPoint
+    definition: The component (PAP) that authors and manages policy that the PDP evaluates.
+    related: [PolicyDecisionPoint]
+  - term: ContinuousVerification
+    definition: Ongoing re-evaluation of authentication and authorization rather than a one-time login decision.
+    related: [Session]
+  - term: Microsegmentation
+    definition: Dividing networks and workloads into small enforcement zones to limit blast radius.
+    related: [AssumeBreach]
+  - term: WorkloadIdentity
+    definition: Cryptographic identity for non-human workloads (e.g., SPIFFE SVIDs) replacing static credentials.
+    related: [Identity, SPIFFE]
+  - term: SPIFFE
+    definition: Secure Production Identity Framework for Everyone, a CNCF-graduated standard for workload identity.
+    related: [WorkloadIdentity]
+  - term: DataCentricSecurity
+    definition: Applying confidentiality, integrity, and access controls that travel with the data itself.
+    related: [Encryption, Tagging]
+  - term: ContextualSignals
+    definition: Telemetry inputs (location, device posture, time, risk score) that influence access decisions.
+    related: [DevicePosture, RiskScore]
+  - term: DevicePosture
+    definition: Aggregated signals about a client device's compliance and health state.
+    related: [ContextualSignals]
+  - term: RiskScore
+    definition: A computed risk value derived from behavioral, identity, and device signals.
+    related: [ContextualSignals]
+  - term: VisibilityAndAnalytics
+    definition: Centralized telemetry and analysis used to inform Zero Trust policy and detect threats.
+    related: [SIEM, UEBA]
+  - term: AutomationAndOrchestration
+    definition: SOAR and infrastructure-as-code workflows that operationalize Zero Trust at scale.
+    related: [SOAR]
+  - term: Governance
+    definition: The cross-cutting capability covering Zero Trust policy authoring, oversight, and program funding.
+    related: [Pillar]

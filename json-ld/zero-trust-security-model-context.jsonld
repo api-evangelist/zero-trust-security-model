@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "zt": "https://api-evangelist.com/zero-trust-security-model/vocab#",
+    "Pillar": "zt:Pillar",
+    "Capability": "zt:Capability",
+    "MaturityLevel": "zt:MaturityLevel",
+    "Framework": "zt:Framework",
+    "Assessment": "zt:Assessment",
+    "Pdp": "zt:PolicyDecisionPoint",
+    "Pep": "zt:PolicyEnforcementPoint",
+    "Pap": "zt:PolicyAdministrationPoint",
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "framework": "zt:framework",
+    "capabilities": "zt:capabilities",
+    "maturity_level": "zt:maturityLevel",
+    "level": "zt:maturityLevel",
+    "pillars": "zt:pillars",
+    "assessed_at": "schema:dateCreated",
+    "evidence": "zt:evidence",
+    "gaps": "zt:gaps"
+  }
+}
