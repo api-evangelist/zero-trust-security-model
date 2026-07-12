@@ -108,6 +108,10 @@ apis:
       - type: Documentation
         url: https://www.ncsc.gov.uk/collection/zero-trust-architecture
 common:
+  - type: VulnerabilityDisclosure
+    url: security/zero-trust-security-model-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/zero-trust-security-model-domain-security.yml
   - type: Documentation
     title: NIST Zero Trust Architecture
     url: https://www.nist.gov/publications/zero-trust-architecture
