@@ -1,4 +1,17 @@
 aid: zero-trust-security-model
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zero-trust-security-model.png
 name: Zero-Trust Security Model
 description: >-
   The Zero Trust security model is a strategic cybersecurity approach that
