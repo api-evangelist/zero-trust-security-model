@@ -1,4 +1,4 @@
-# Zero-Trust Security Model (zero-trust-security-model)
+# Zero-Trust Security Model
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,95 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The Zero Trust security model is a strategic cybersecurity approach that eliminates implicit trust and requires continuous verification of every user, device, workload, and request attempting to access resources, regardless of network location. It is rooted in NIST SP 800-207, formalized for federal agencies by the CISA Zero Trust Maturity Model and the DoD Zero Trust Reference Architecture, and operationalized by NSA, NCSC, and industry guidance.
+The Zero Trust security model is a strategic cybersecurity approach that eliminates implicit trust and requires continuous verification of every user, device, workload, and request attempting to access resources, regardless of network location. It is rooted in NIST SP 800-207, formalized for federal agencies by the CISA Zero Trust Maturity Model and the DoD Zero Trust Reference Architecture, and operationalized by NSA, NCSC, and industry guidance. This topic indexes the canonical specifications, guidance documents, advocacy organizations, and reference data schemas that describe the Zero Trust security model and its pillars (Identity, Devices, Networks, Applications & Workloads, Data, Visibility & Analytics, Automation & Orchestration).
 
-**URL:** [https://www.nist.gov/publications/zero-trust-architecture](https://www.nist.gov/publications/zero-trust-architecture)
+**Areas:** Access Control · Cybersecurity · Federal · Identity and Access Management · Network Security · NIST · Security · Security Framework · Zero Trust
 
-## Tags
+## Zero-Trust Security Model on APIs.io
 
-- Access Control, Cybersecurity, Federal, Identity Management, Network Security, NIST, Security, Security Framework, Zero Trust
+Everything profiled for Zero-Trust Security Model is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/zero-trust-security-model/](https://apis.io/providers/zero-trust-security-model/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (5)
 
-- **Created:** 2025
-- **Modified:** 2026-05-03
+- [NIST SP 800-207 Zero Trust Architecture](https://apis.io/apis/zero-trust-security-model/nist-sp-800-207/) — The foundational specification of the Zero Trust security model. Defines the seven tenets, the PDP/PEP/PA logical components, and the deployment variants…
+- [CISA Zero Trust Maturity Model](https://apis.io/apis/zero-trust-security-model/cisa-zero-trust-maturity-model/) — CISA's Zero Trust Maturity Model defines four maturity levels (Traditional, Initial, Advanced, Optimal) across five pillars (Identity, Devices, Networks,…
+- [DoD Zero Trust Reference Architecture](https://apis.io/apis/zero-trust-security-model/dod-zero-trust-reference-architecture/) — The Department of Defense Zero Trust Reference Architecture defines the seven DoD Zero Trust pillars (User, Device, Application & Workload, Data, Network &…
+- [NSA Zero Trust Guidance](https://apis.io/apis/zero-trust-security-model/nsa-zero-trust-guidance/) — A series of NSA Cybersecurity Information Sheets providing pillar-by- pillar guidance for implementing Zero Trust, including the Network and Environment,…
+- [UK NCSC Zero Trust Architecture Design Principles](https://apis.io/apis/zero-trust-security-model/ncsc-zero-trust-principles/) — The UK National Cyber Security Centre's eight Zero Trust design principles, providing the British government's view of Zero Trust architecture for both…
 
-## APIs
+### Published properties
 
-### NIST SP 800-207 Zero Trust Architecture
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The foundational specification of the Zero Trust security model.
+#### JSON Schema (2)
 
-- [Documentation](https://csrc.nist.gov/pubs/sp/800/207/final)
-- [Specification (PDF)](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-207.pdf)
+The data models the API reads and writes.
 
-### CISA Zero Trust Maturity Model
+- [Zero Trust Maturity Assessment](https://apis.io/schemas/zero-trust-security-model/zero-trust-security-model-maturity/)
+- [Zero Trust Pillar](https://apis.io/schemas/zero-trust-security-model/zero-trust-security-model-pillar/)
 
-CISA's Zero Trust Maturity Model defines four maturity levels (Traditional, Initial, Advanced, Optimal) across five pillars and three cross-cutting capabilities.
+#### JSON Structure (1)
 
-- [Documentation](https://www.cisa.gov/zero-trust-maturity-model)
-- [PDF](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf)
+Data models expressed in JSON Structure.
 
-### DoD Zero Trust Reference Architecture
+- [Zero Trust Security Model Pillar Structure](https://apis.io/json-structure/zero-trust-security-model/zero-trust-security-model-pillar-structure/)
 
-DoD seven-pillar reference architecture with 152 capabilities across target and advanced activities.
+#### JSON-LD (1)
 
-- [Documentation](https://dodcio.defense.gov/library/)
-- [PDF](https://dodcio.defense.gov/Portals/0/Documents/Library/ZT-Reference-Architecture.pdf)
+Linked-data contexts for the provider's vocabulary.
 
-### NSA Zero Trust Guidance
+- [Zero Trust Security Model Context](https://apis.io/jsonld/zero-trust-security-model/zero-trust-security-model-context/)
 
-A series of NSA Cybersecurity Information Sheets providing pillar-by-pillar guidance for implementing Zero Trust.
+#### Vocabulary (1)
 
-- [Documentation](https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2899282/nsa-releases-guidance-on-zero-trust-security-model/)
+The provider's domain terms, defined.
 
-### UK NCSC Zero Trust Architecture Design Principles
+- [Zero Trust Security Model Vocabulary](https://apis.io/vocabularies/zero-trust-security-model/zero-trust-security-model-vocabulary/)
 
-The UK National Cyber Security Centre's eight Zero Trust design principles.
+#### Examples (1)
 
-- [Documentation](https://www.ncsc.gov.uk/collection/zero-trust-architecture)
+Example requests and responses.
 
-## Common Properties
+- [Zero Trust Security Model Maturity Example](https://apis.io/examples/zero-trust-security-model/zero-trust-security-model-maturity-example/)
 
-- [NIST Zero Trust Architecture](https://www.nist.gov/publications/zero-trust-architecture)
-- [NIST SP 800-207 PDF](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-207.pdf)
-- [NIST SP 800-207A PDF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207A.pdf)
-- [CISA Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model)
-- [OMB M-22-09 Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf)
-- [DoD Zero Trust Reference Architecture](https://dodcio.defense.gov/Portals/0/Documents/Library/ZT-Reference-Architecture.pdf)
-- [NSA Zero Trust Guidance](https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/2899282/nsa-releases-guidance-on-zero-trust-security-model/)
-- [UK NCSC Zero Trust](https://www.ncsc.gov.uk/collection/zero-trust-architecture)
-- [Cloudflare Learning - What Is Zero Trust](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
-- [Microsoft Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)
-- [Google BeyondCorp](https://cloud.google.com/beyondcorp)
-- [SPIFFE on GitHub](https://github.com/spiffe)
-- [Open Policy Agent on GitHub](https://github.com/open-policy-agent)
+#### Governance rules (1)
 
-## Artifacts
+Spectral rulesets for the provider's contracts.
 
-### JSON Schema
+- [Zero-Trust Security Model — jsonschema rules](https://apis.io/rules/zero-trust-security-model/zero-trust-security-model-jsonschema-spectral-rules/)
 
-- [Zero Trust Pillar Schema](json-schema/zero-trust-security-model-pillar-schema.json)
-- [Zero Trust Maturity Assessment Schema](json-schema/zero-trust-security-model-maturity-schema.json)
+#### Security (2)
 
-### JSON Structure
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Zero Trust Pillar Structure](json-structure/zero-trust-security-model-pillar-structure.json)
+- [Zero Trust Security Model Domain Security](https://apis.io/security/zero-trust-security-model/zero-trust-security-model-domain-security/)
+- [Zero Trust Security Model Vulnerability Disclosure](https://apis.io/security/zero-trust-security-model/zero-trust-security-model-vulnerability-disclosure/)
 
-### JSON-LD
+#### Plans and pricing (1)
 
-- [Zero Trust Security Model JSON-LD Context](json-ld/zero-trust-security-model-context.jsonld)
+Published plans, tiers and prices.
 
-### Examples
+- [Zero Trust Security Model Plans Pricing](https://apis.io/plans/zero-trust-security-model/zero-trust-security-model-plans-pricing/)
 
-- [Zero Trust Maturity Assessment Example](examples/zero-trust-security-model-maturity-example.json)
+#### Rate limits (1)
 
-## Vocabulary
+Published request limits.
 
-- [Zero Trust Security Model Vocabulary](vocabulary/zero-trust-security-model-vocabulary.yaml)
+- [Zero Trust Security Model Rate Limits](https://apis.io/rate-limits/zero-trust-security-model/zero-trust-security-model-rate-limits/)
 
-## Maintainers
+#### FinOps (1)
 
-**FN:** Kin Lane
+What the API costs to run, by operation.
 
-**Email:** kin@apievangelist.com
+- [Zero Trust Security Model Finops](https://apis.io/finops/zero-trust-security-model/zero-trust-security-model-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://www.nist.gov/publications/zero-trust-architecture)
+- [Compliance](https://www.cisa.gov/zero-trust-maturity-model)
+- [GitHub](https://github.com/spiffe)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Zero-Trust Security Model: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/zero-trust-security-model/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
